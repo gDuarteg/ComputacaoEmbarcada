@@ -32,15 +32,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.4.3">
     
     
       
-        <title>TC - RTC - IRQ - 5s - Computação Embarcada</title>
+        <title>TC - RTC - RTT - 5s - Computação Embarcada</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.96cc8824.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -51,12 +51,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#tc-rtc-irq" tabindex="0" class="md-skip">
+      <a href="#tc-rtc-rtt" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -96,7 +96,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="5s - Computação Embarcada" aria-label="5s - Computação Embarcada" class="md-header-nav__button md-logo">
+        <a href=".." title="5s - Computação Embarcada" class="md-header-nav__button md-logo">
           
             <i class="md-icon">developer_board</i>
           
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                TC - RTC - IRQ
+                TC - RTC - RTT
               
             </span>
           
@@ -127,7 +127,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -537,11 +537,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        TC - RTC - IRQ
+        TC - RTC - RTT
       </label>
     
-    <a href="./" title="TC - RTC - IRQ" class="md-nav__link md-nav__link--active">
-      TC - RTC - IRQ
+    <a href="./" title="TC - RTC - RTT" class="md-nav__link md-nav__link--active">
+      TC - RTC - RTT
     </a>
     
       
@@ -555,66 +555,51 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#entenda-o-exemplo" class="md-nav__link">
-    Entenda o exemplo
+  <a href="#perifericos-exemplos" class="md-nav__link">
+    Periféricos / Exemplos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#programando" class="md-nav__link">
-    Programando
+  <a href="#lab" class="md-nav__link">
+    Lab
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-sleep" class="md-nav__link">
-    1. Sleep
+  <a href="#c-tc-rtt-e-rtc" class="md-nav__link">
+    (C) TC, RTT e RTC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-mais-rapido" class="md-nav__link">
-    2. Mais rápido !
+  <a href="#c-piscar-mais-um-led" class="md-nav__link">
+    (C+) Piscar mais um LED
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-piscar-durante-1-minuto-e-parar-durante-1-minuto-ciclico" class="md-nav__link">
-    3. Piscar durante 1 minuto e parar durante 1 minuto - cíclico
+  <a href="#b-exibindo-hhmmss" class="md-nav__link">
+    (B) Exibindo HH:MM:SS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    A
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#4-flag-e-a-melhor-maneira" class="md-nav__link">
-    4. Flag é a melhor maneira ?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-varias-frequencias" class="md-nav__link">
-    5. Várias frequências
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-botoes" class="md-nav__link">
-    6. Botões
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-oled1-exibir-hora" class="md-nav__link">
-    7. OLED1 - Exibir hora
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -936,66 +921,51 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#entenda-o-exemplo" class="md-nav__link">
-    Entenda o exemplo
+  <a href="#perifericos-exemplos" class="md-nav__link">
+    Periféricos / Exemplos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#programando" class="md-nav__link">
-    Programando
+  <a href="#lab" class="md-nav__link">
+    Lab
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-sleep" class="md-nav__link">
-    1. Sleep
+  <a href="#c-tc-rtt-e-rtc" class="md-nav__link">
+    (C) TC, RTT e RTC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-mais-rapido" class="md-nav__link">
-    2. Mais rápido !
+  <a href="#c-piscar-mais-um-led" class="md-nav__link">
+    (C+) Piscar mais um LED
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-piscar-durante-1-minuto-e-parar-durante-1-minuto-ciclico" class="md-nav__link">
-    3. Piscar durante 1 minuto e parar durante 1 minuto - cíclico
+  <a href="#b-exibindo-hhmmss" class="md-nav__link">
+    (B) Exibindo HH:MM:SS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    A
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#4-flag-e-a-melhor-maneira" class="md-nav__link">
-    4. Flag é a melhor maneira ?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-varias-frequencias" class="md-nav__link">
-    5. Várias frequências
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-botoes" class="md-nav__link">
-    6. Botões
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-oled1-exibir-hora" class="md-nav__link">
-    7. OLED1 - Exibir hora
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -1023,10 +993,15 @@
                   <a href="https://github.com/Insper/ComputacaoEmbarcada/edit/master/docs-src/Lab-4-TickTack-Lab.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="tc-rtc-irq">TC - RTC - IRQ<a class="headerlink" href="#tc-rtc-irq" title="Permanent link">&para;</a></h1>
+                <h1 id="tc-rtc-rtt">TC - RTC - RTT<a class="headerlink" href="#tc-rtc-rtt" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Esse lab já possui entrega com nota!</p>
+</div>
+<div class="admonition repositório">
+<p class="admonition-title">Repositório</p>
+<p>Criar repositório para entregar o lab e preencher o formulário a seguir:</p>
+<p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS3x4QLibvCgUAiekQi0_cjWPZqwZ2j5xQwS_MG3QLSJzmUg/viewform?embedded=true" width="640" height="571" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
 </div>
 <table>
 <thead>
@@ -1036,281 +1011,147 @@
 </thead>
 <tbody>
 <tr>
-<td><code>Labs/TC-RTC-IRQ/</code></td>
+<td><code>Labs/TC-RTC-RTT/</code></td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>Parte 1: <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Entra em sleep mode</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Led pisca mais rápido</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pisca Pisca </li>
+<li>
+<p>Parte 1 (C): </p>
+<ol>
+<li>Entender os exemplos (TC/RTT/RTC)</li>
+<li>Incorporar todos os exemplos em um único projeto</li>
+<li>Pisca pisca </li>
+</ol>
+</li>
+<li>
+<p>Parte 2 </p>
+<ul>
+<li>C+ : fazer outro LED piscar com TC</li>
+<li>B : Exibir a hora atual no lcd</li>
+<li>A : Usar IRQ do segundos do RTC</li>
 </ul>
 </li>
-<li>Parte 2:<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Corrigido uso de flag para parar o pisca pisca</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Usar placa OLED</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Para cada LED um TC diferente</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada LED é controlado por um botão</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Exibir hora atual no OLED1 </li>
 </ul>
-</li>
+<h2 id="perifericos-exemplos">Periféricos / Exemplos<a class="headerlink" href="#perifericos-exemplos" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">SAME70-examples</p>
+<p>Antes de continuar atualize o repositório de exemplos, teve alteração.</p>
+</div>
+<p>Nesse lab iremos trabalhar com três periféricos que lidam com 'tempo', o TimerCounter - TC (temos no total e 4x3=12 no uC) o Real-time Timer - RTT (temos um) e o Real-time Clock RTC (temos um). Cada um possui sua especifidade:</p>
+<ul>
+<li>TC: Faz várias coisas, nesse lab iremos usar para gerar interrupções maiores que 2Hz (<strong>ele não consegue gerar tempos muito lentos!</strong>)</li>
+<li>RTT: É um contador que consegue gerar praticamente qualquer frequência (vamos usar para gerar frequências lentas)</li>
+<li>RTC: É um como um calendário com relógio, ele conta anos, meses, dias, horas, minutos e segundos.</li>
 </ul>
-<h2 id="entenda-o-exemplo">Entenda o exemplo<a class="headerlink" href="#entenda-o-exemplo" title="Permanent link">&para;</a></h2>
+<p>Cada periférico está em um exemplo diferente:</p>
 <table>
 <thead>
 <tr>
-<th>SAME70-Examples</th>
+<th>Periférico exemplos</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/Insper/SAME70-examples/tree/master/Perifericos-uC/TC-RTC-IRQ"><code>Perifericos-uC/TC-RTC-IRQ</code></a></td>
+<td><a href="https://github.com/Insper/SAME70-examples/tree/master/Perifericos-uC/TC-IRQ"><code>Perifericos/TC-IRQ</code></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Insper/SAME70-examples/tree/master/Perifericos-uC/RTT-IRQ"><code>Perifericos/RTT-IRQ</code></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Insper/SAME70-examples/tree/master/Perifericos-uC/RTC-IRQ"><code>Perifericos/RTC-IRQ</code></a></td>
 </tr>
 </tbody>
 </table>
-<p>O firmware disponível no repositório de exemplos chamado de <a href="https://github.com/Insper/SAME70-examples/tree/master/Perifericos-uC/TC-RTC-IRQ"><code>TC-RTC-IRQ</code></a> configura o TimerCounter (TC) e o RTC do mircontrolador. O TC0 canal 1 é configurado para gerar uma interrupção (<strong>TC1_Handler</strong>) a cada 250ms (f=1/T -&gt; de 4Hz) já o RTC é configurado para operar em modo de alarme, gerando uma interrupção (<strong>RTC_Handler</strong>) em um determinado momento. Inicialmente o RTC está configurado para gerar uma interrupção um minuto após o início do microcontrolador.</p>
-<p>O TimerCounter faz com o o led pisque na frequência de 4Hz enquanto não ocorrer o alarme do RTC, após o acontecimento do alarme (interrupção do RTC) o piscar do led é desligado.</p>
-<p><img alt="" src="../imgs/TC/overview.png" width="500" /></p>
-<div class="admonition note">
-<p class="admonition-title">Entenda e execute</p>
+<p>Cada exemplo possui o seu próprio <code>README</code> que da uma visão geral dos periféricos. Note que todos esses exemplos estão operando por interrupção! Onde cada periférico possui o seu <code>handler</code> para resolver a interrupção.</p>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Para cada exemplo (TC,RTT e RTC):
+1. Leia o README
+1. Programe a placa (e veja os LEDs piscando!)
+1. Entenda o código</p>
+</div>
+<h2 id="lab">Lab<a class="headerlink" href="#lab" title="Permanent link">&para;</a></h2>
+<p>Nesse lab iremos utilizar a placa <code>OLED1</code>, para isso, você deve copiar o código exemplo: <a href="https://github.com/Insper/SAME70-examples/tree/master/Screens/OLED-Xplained-Pro-SPI"><code>SAME70-examples/Screens/OLED-Xplained-Pro-SPI/</code></a> para a pasta da entrega do seu repositório <code>Labs/TC-RTC-RTT</code>.</p>
+<h3 id="c-tc-rtt-e-rtc">(C) TC, RTT e RTC<a class="headerlink" href="#c-tc-rtt-e-rtc" title="Permanent link">&para;</a></h3>
+<p>Com o código do OLED1 copiado (eu dei uma simplificada nele nessa nova versão), vocês devem configurar os botões e os LEDs da placa OLED, e então utilizando um <code>TC</code> fazer com que o <code>LED0</code> pisque a uma frequencia de 6 HZ; usando o RTT fazer com que o <code>LED1</code> pisque a uma frequência de 0.5Hz e com que o LED da placa pisque por 5x após 20s do sistema ter inicializado, fazer o uC entrar em sleepmode sempre que não tiver nada para fazer.</p>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>No código do OLED1:</p>
 <ol>
-<li>Copie esse exemplo para a pasta do seu repositório [<code>Labs/TC-RTC-IRQ</code>].</li>
-<li>Leia o <a href="https://github.com/Insper/SAME70-examples/tree/master/Perifericos-uC/TC-RTC-IRQ">README</a> desse exemplo!</li>
-<li>Execute o exemplo na placa!</li>
-<li>Responda:<ul>
-<li>Quais periféricos são utilizados?</li>
-<li>O que o firmware faz?</li>
-<li>Quantas interrupções são usada, quais são elas?</li>
-</ul>
-</li>
+<li>Configurar os pinos e os LEDs da placa OLED1</li>
+<li>Fazer com que o <code>LED0</code> pisque a 4HZ usando o TC</li>
+<li>Fazer com que o <code>LED1</code> pisque a cada 4s usando o RTT</li>
+<li>Fazer com o que o <code>LED PLACA</code> pisque por 5 vezes após 20 segundos (USAR RTC)</li>
+<li>Entrar em sleepmode</li>
 </ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Abrir o código atual e o exemplo e ir trazendo as funções e defines que precisa usar, não esqueça de chamar as funções no <code>main</code></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Você vai precisar incluir no <code>ASF WIZARD</code> os drivers do TCC e RTT</p>
+<p>Quando você fizer a busca vai reparar que tem dois drivers de <code>TC</code>,
+para isso você deve clicar em <code>Details</code> e ver o TC que adiciona só
+dois arquivos <code>tc.h</code> e <code>tc.c</code> como na figura a seguir</p>
+<p><img alt="" src="../imgs/TC/ASF.png" /></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Aqui já é C!</p>
+</div>
+<hr />
+<h3 id="c-piscar-mais-um-led">(C+) Piscar mais um LED<a class="headerlink" href="#c-piscar-mais-um-led" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Faça o <code>LED2</code> da placa OLED piscar a 5Hz usando um novo TC</p>
+</div>
+<h3 id="b-exibindo-hhmmss">(B) Exibindo HH:MM:SS<a class="headerlink" href="#b-exibindo-hhmmss" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Exiba a hora no formato (HH:MM:SS) no display OLED</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>O RTC tem uma função que você consegue buscar no periférico a hora atual: <a href="http://asf.atmel.com/docs/latest/sam.drivers.rtc.example.samv71_xplained_ultra/html/group__sam__drivers__rtc__group.html#ga91b1a1ac85e5bb5effefe275b824fe6a"><code>rtc_get_time()</code></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Para executar isso você deverá ser capaz de saber quando que o segundo mudou, duas são as opções:</p>
+<ol>
+<li>Usar um novo TC configurado com 1hz</li>
+<li>Pedir para o RTC gerar uma IRQ a cada mudança de segunda</li>
+</ol>
+<p>A segunda opção você faz modificando a função de init_rtc:</p>
+<div class="codehilite"><pre><span></span>RTC_init(RTC, ID_RTC, rtc_initial, RTC_IER_ALREN | RTC_IER_SECEN);
+</pre></div>
+
+<p>E agora você consegue dentro do <code>RTC_handler</code> saber quando você entrou
+na IRQ pelo segundo:</p>
+<div class="codehilite"><pre><span></span><span class="cm">/*  Verifica por qual motivo entrou</span>
+<span class="cm">*  na interrupcao, se foi por segundo</span>
+<span class="cm">*  ou Alarm</span>
+<span class="cm">*/</span>
+<span class="k">if</span> <span class="p">((</span><span class="n">ul_status</span> <span class="o">&amp;</span> <span class="n">RTC_SR_SEC</span><span class="p">)</span> <span class="o">==</span> <span class="n">RTC_SR_SEC</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">//    </span>
+    <span class="c1">//  Entrou por segundo! </span>
+    <span class="c1">// </span>
+    <span class="n">rtc_clear_status</span><span class="p">(</span><span class="n">RTC</span><span class="p">,</span> <span class="n">RTC_SCCR_SECCLR</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Não continue sem ter feito a etapa anterior</p>
+<p>Você nunca deve atualizar display dentro de Handlers! Sempre no main</p>
 </div>
-<h2 id="programando">Programando<a class="headerlink" href="#programando" title="Permanent link">&para;</a></h2>
-<p>Vamos agora trabalhar com o código exemplo, modificando e incorporando novas funcionalidades. </p>
-<div class="admonition warning">
-<p>Nesse laboratório, não é permitido utilizar funções de delay por software:  <code>delay_s()</code> / <code>delay_ms()</code> / ...</p>
-</div>
-<h4 id="1-sleep">1. Sleep<a class="headerlink" href="#1-sleep" title="Permanent link">&para;</a></h4>
-<p>Vamos fazer nosso uc entrar em sleep sempre que não tiver nada para fazer. Para isso utilize a função <code>pmc_sleep(..)</code> no <code>while(1)</code>, como ilustrado a seguir.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-  <span class="c1">// trecho de codigo a ser executado antes de dormir</span>
-  <span class="c1">// ...</span>
-
-  <span class="c1">// entra em sleep</span>
-  <span class="n">pmc_sleep</span><span class="p">(</span><span class="n">SAM_PM_SMODE_SLEEP_WFI</span><span class="p">);</span>
-
-  <span class="c1">// trecho de codigo a ser executado depois de acordar</span>
-  <span class="c1">// ...</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>O modo <strong>Wait for Interrupt</strong> WFI é um dos modos de powersave mais básicos e menos eficientes do SAME70. Nele o CORE ainda é mantido energizado porém sem clock. A grande vantagem desse modo é que qualquer interrupção pode acordar o core, diferente de outros modos mais agressivos que desabilita complemente o CORE implicando em um menor gasto energético.</p>
-<p>Toda vez que essa função for chamada o CORE entrará em modo sleep e ficará "bloqueada" esperando por alguma interrupção. Após detectada a interrupção, o CORE irá acordar e resolver todas as interrupções que estão pendentes e então irá liberar essa função, ou seja, continuará a executar o código.</p>
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<ol>
-<li>Faça o exemplo fazendo com o que o uC entre em modo sleep enquanto estiver ocioso.</li>
-<li>Compile, programe e teste</li>
-</ol>
-</div>
-<h4 id="2-mais-rapido">2. Mais rápido !<a class="headerlink" href="#2-mais-rapido" title="Permanent link">&para;</a></h4>
-<p>Vamos fazer com o que os LEDs pisquem mais rápidos, para isso será necessário modificar a frequência na qual o TimerCounter (TC) gera a interrupção.</p>
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<ol>
-<li>Faça com que o LED pisque ainda mais rápido! Escolha uma frequência que achar adequado.</li>
-<li>Compile, programe e teste</li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>De uma olhada nos parâmetros da função <code>tc_init()</code></p>
-</div>
-<h4 id="3-piscar-durante-1-minuto-e-parar-durante-1-minuto-ciclico">3. Piscar durante 1 minuto e parar durante 1 minuto - cíclico<a class="headerlink" href="#3-piscar-durante-1-minuto-e-parar-durante-1-minuto-ciclico" title="Permanent link">&para;</a></h4>
-<p>O objetivo agora é fazermos com que o LED da placa pisque por um minuto, e depois, pare de piscar por um minuto, e depois volte a piscar por um minuto (uma coisa cíclica), como ilustrado a seguir:</p>
-<p><img alt="Led da placa" src="../imgs/TC/led.png" /></p>
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<ol>
-<li>Faça com que o led pisque durante um minuto e fique um minuto sem piscar eternamente, faça isso de forma cíclica.</li>
-<li>Compile, programe e teste</li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<ul>
-<li>Use o alarme do RTC para isso!</li>
-<li>Utilize a função <code>[rtc_get_time()](http://asf.atmel.com/docs/latest/same70/html/group__sam__drivers__rtc__group.html#ga91b1a1ac85e5bb5effefe275b824fe6a)</code> para saber a hora atual.</li>
-<li>Cuidado ao mudar de Hora/ Dia/ Mês</li>
-</ul>
-</div>
-<hr />
-<blockquote>
-<p>Até aqui é C</p>
-</blockquote>
-<hr />
-<h4 id="4-flag-e-a-melhor-maneira">4. Flag é a melhor maneira ?<a class="headerlink" href="#4-flag-e-a-melhor-maneira" title="Permanent link">&para;</a></h4>
-<p>A tomada de decisão se o LED está em modo "pisca pisca" é feita por uma variável global <code>flag_led0</code>:</p>
-<div class="codehilite"><pre><span></span><code><span class="cm">/************************************************************************/</span>
-<span class="cm">/* VAR globais                                                          */</span>
-<span class="cm">/************************************************************************/</span>
-<span class="kt">uint8_t</span> <span class="n">flag_led0</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</code></pre></div>
-
-<p>Dentro da interrupção do TC1 verificamos a flag:</p>
-<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">TC1_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-    <span class="p">....</span>
-
-    <span class="cm">/** Muda o estado do LED */</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">flag_led0</span><span class="p">)</span>
-        <span class="n">pin_toggle</span><span class="p">(</span><span class="n">LED_PIO</span><span class="p">,</span> <span class="n">LED_PIN_MASK</span><span class="p">);</span>
-</code></pre></div>
-
-<p>O problema aqui é que a interrupção do TC1 continua ocorrendo mesmo com o piscar do LED desativado, o que pode ter um impacto no consumo e performance do projeto.</p>
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<ol>
-<li>Proponha e implemente uma solução para não usar mais flag.</li>
-<li>Compile, programe e teste</li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<ul>
-<li>Que tal fazer com que o <code>TC</code> pare de executar? Procure por uma função que faça isso.</li>
-<li>A função que faz o <code>TC</code> começar é a <code>tc_start()</code></li>
-</ul>
-</div>
-<h4 id="5-varias-frequencias">5. Várias frequências<a class="headerlink" href="#5-varias-frequencias" title="Permanent link">&para;</a></h4>
-<p>Utilizando a placa OLED1 conectada ao kit de desenvolvimento, faça com que cada LED pisque nas frequências determinadas na tabela a baixo, utilize para cada LED um TC diferente.</p>
-<div class="codehilite"><pre><span></span><code>| LED OLED1 | Frequência  (Hz) |
-|-----------|------------------|
-| LED 1     | 8                |
-| LED 2     | 11               |
-| LED 3     | 17               |
-</code></pre></div>
-
-
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<ol>
-<li>Faça com que os LEDs da placa OLED pisquem em diferentes frequências, usando 3 TCs</li>
-<li>Compile, programe e teste</li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>A função <code>tc_init()</code> do código exemplo recebe como argumento:</p>
-<ul>
-<li>
-<p>Um <code>TC</code>: </p>
-<ul>
-<li><code>TC0</code>, <code>TC1</code>, <code>TC2</code></li>
-</ul>
-</li>
-<li>
-<p>Um ID do canal:  </p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>TC</th>
-<th>Canal 0</th>
-<th>Canal 1</th>
-<th>Canal 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>TC0</code></td>
-<td><code>ID_TC0</code></td>
-<td><code>ID_TC1</code></td>
-<td><code>ID_TC2</code></td>
-</tr>
-<tr>
-<td><code>TC1</code></td>
-<td><code>ID_TC3</code></td>
-<td><code>ID_TC4</code></td>
-<td><code>ID_TC5</code></td>
-</tr>
-<tr>
-<td><code>TC2</code></td>
-<td><code>ID_TC6</code></td>
-<td><code>ID_TC7</code></td>
-<td><code>ID_TC8</code></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>
-<p>Um canal:</p>
-<ul>
-<li><code>0</code>, <code>1</code>, <code>2</code></li>
-</ul>
-</li>
-<li>
-<p>E uma frequência</p>
-</li>
-</ul>
-<hr />
-<p>Caso queira usar por exemplo o canal 1 do TC2 gerando uma interrupção a 10Hz, você deve chamar a função da seguinte maneira:</p>
-<p><code>TC_init(TC2, ID_TC7, 1, 10)</code></p>
-<p>Uma vez feito isso, você deve definir a função de handler desse canal:</p>
-<div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">TC7_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-
-<span class="cm">/* Devemos indicar ao TC que a interrupção foi satisfeita. */</span>
-<span class="k">volatile</span> <span class="kt">uint32_t</span> <span class="n">ul_dummy</span> <span class="o">=</span> <span class="n">tc_get_status</span><span class="p">(</span><span class="n">TC2</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-
-<span class="cm">/* seu código vem aqui */</span>
-
-<span class="p">}</span>
-</code></pre></div>
-
-</div>
-<h4 id="6-botoes">6. Botões<a class="headerlink" href="#6-botoes" title="Permanent link">&para;</a></h4>
-<p>Cada botão da placa OLED deve comandar o seu LED, uma vez apertado esse botão faça o LED relacionado a esse botão parar de piscar, quando apertar o botão novamente, o LED volta a piscar. Você deve tratar os botões com interrupção.</p>
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<ol>
-<li>
-<p>Faça com que os botões (relacionados a cada LED) pare ou inicialize o piscar dos LEDs, utilize para isso interrupção do PIO.</p>
-</li>
-<li>
-<p>Não use flags para isso!</p>
-</li>
-</ol>
-</div>
-<h4 id="7-oled1-exibir-hora">7. OLED1 - Exibir hora<a class="headerlink" href="#7-oled1-exibir-hora" title="Permanent link">&para;</a></h4>
-<div class="admonition example">
-<p class="admonition-title">Modifique e teste</p>
-<p>Utilize o <code>OLED1</code> para exibir a hora atual no display!</p>
-<ul>
-<li>Dica: <ul>
-<li>Ative a interrupção de segundos do RTC (além da de alarme)</li>
-<li>No handler, verifique o motivo de entrar na interrupção</li>
-<li>Trabalhe com flags, atualize o LCD no <code>while(1){}</code></li>
-</ul>
-</li>
-</ul>
-<p>Para verificar se a interrupção foi referente a segundos (precisa ativar antes!):</p>
-<p>```
-  // Second increment interrupt
-  if ((ul_status &amp; RTC_SR_SEC) == RTC_SR_SEC)
-  {
-  /* limpa interrupcao segundos */
-      rtc_clear_status(RTC, RTC_SCCR_SECCLR);
-  }</p>
-</div>
-<p>```</p>
+<h4 id="a">A<a class="headerlink" href="#a" title="Permanent link">&para;</a></h4>
+<p>Usar a IRQ do RTC por segundo para atualizar o display</p>
                 
                   
-                
                 
               
               
@@ -1370,9 +1211,9 @@
           </div>
         
         powered by
-        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        <a href="https://www.mkdocs.org">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
@@ -1382,7 +1223,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      <script src="../assets/javascripts/application.1f8d785c.js"></script>
       
       <script>app.initialize({version:"1.1",url:{base:".."}})</script>
       
